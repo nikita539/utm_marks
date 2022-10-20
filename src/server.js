@@ -6,14 +6,14 @@ const app = express()
 const PORT = 3003
 
 
-app.use(express.static(path.join(__dirname,'./dist')))
+app.use(express.static(path.join(__dirname,'../dist')))
 
 app.get('/', (request, response) => {
-    response.sendFile(path.join(__dirname, '../src/dist/index.html'))
+    response.sendFile(path.join(__dirname, '../dist/index.html'))
 })
 
 app.get('/develop', (request, response) => {
-    response.sendFile(path.join(__dirname, '../src/dist/index.html'))
+    response.sendFile(path.join(__dirname, '../dist/index.html'))
 })
 
 app.listen(PORT, function () {
