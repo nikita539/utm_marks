@@ -9,7 +9,7 @@
     "parcel": "^2.7.0"
   },
   "scripts": {
-    "start": "parcel index.html",
+    "dev": "parcel index.html",
     "build": "parcel build index.html",
     "server": "node server.js"
   }

@@ -1,3 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    window.location.replace('https://www.wildberries.ru/')
+    if (window.location.pathname !== '/develop') {
+        window.location.replace('https://www.wildberries.ru/')
+    }
 })

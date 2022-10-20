@@ -12,6 +12,9 @@ app.get('/', (request, response) => {
     response.sendFile(path.join(__dirname, './dist/index.html'))
 });
 
+app.get('/develop', (request, response) => {
+    response.sendFile(path.join(__dirname, './dist/index.html'))
+})
 
 app.listen(PORT, function () {
     console.log("Application is started at localhost:3003")
