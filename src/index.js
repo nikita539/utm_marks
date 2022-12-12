@@ -1,5 +1,5 @@
 import { checkWord } from './helpers'
-import { MARKET_URL, SNIPE_URL, SWIFT_URL } from "./redirectingurls";
+import {MARKET_URL, SNIPE_URL, STORK_URL, SWIFT_URL} from "./redirectingurls";
 
 document.addEventListener('DOMContentLoaded', function() {
     const path = window.location.href
@@ -19,7 +19,13 @@ document.addEventListener('DOMContentLoaded', function() {
         return
     }
 
+    if (checkWord(path,"stork")) {
+        window.location.replace(STORK_URL)
+        return
+    }
+
     if (window.location.pathname !== '/develop') {
         window.location.replace('https://www.wildberries.ru/')
     }
+
 })
