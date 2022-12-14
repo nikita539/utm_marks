@@ -1,26 +1,26 @@
 import { checkWord } from './helpers'
-import {MARKET_URL, SNIPE_URL, STORK_URL, SWIFT_URL} from "./redirectingurls";
+import { URLS } from "./redirectingurls";
 
 document.addEventListener('DOMContentLoaded', function() {
     const path = window.location.href
 
     if (checkWord(path,"market")) {
-        window.location.replace(MARKET_URL)
+        window.location.replace(URLS.MARKET_URL)
         return
     }
 
     if (checkWord(path,"snipe")) {
-        window.location.replace(SNIPE_URL)
+        window.location.replace(URLS.SNIPE_URL)
         return
     }
 
     if (checkWord(path, "swift")) {
-        window.location.replace(SWIFT_URL)
+        window.location.replace(URLS.SWIFT_URL)
         return
     }
 
     if (checkWord(path,"stork")) {
-        window.location.replace(STORK_URL)
+        window.location.replace(URLS.STORK_URL)
         return
     }
 
