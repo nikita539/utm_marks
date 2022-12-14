@@ -25,8 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return
     }
 
-    if (window.location.pathname !== '/develop') {
-        window.location.replace('https://www.wildberries.ru/')
-    }
+    window.location.replace(URLS.MARKET_URL)
 
 })
